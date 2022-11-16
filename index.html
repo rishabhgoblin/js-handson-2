@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    const Calculator = (A, B, C) => <br>
+{<br>
+if (A === '+')<br>
+return B+C;<br>
+else if (A === '-')<br>
+return B-C;<br> 
+else if (A === '*')<br>
+return B*C;<br>
+else if (A === '/')<br>
+return B/C;<br>
+};
+<hr>
+const Check_divisibility = (N) => {<br>
+    if( N % 6 == 0 && N % 9 == 0 )<br>
+  return "Divisible by both";<br>
+      else<br>
+        return "Not Divisible by both";<br>
+  };
+  <hr>
+  const isEligible = (a) => {<br>
+    if (a > 18){<br>
+      return (" Eligible for Voting ");<br>
+    }<br>
+    else{<br>
+      return (" Not Eligible for Voting ");<br>
+    }<br>
+    };
+    <hr>
+    const findRelation = (x,y) => {<br>
+        if(x < y){<br>
+        return(x+ " is smaller than " +y) <br>
+        } <br>
+        if(x > y){ <br>
+          return(x+ " is greater than " +y) <br>
+        } <br>
+        if(x == y){ <br>
+          return(x+ " is equal to " +y) <br>  
+        } <br>
+       };
+       <hr>
+       const findGrades = (a) => { <br>
+        if (a <= 10) <br>
+        return "E"; <br>
+        else if (a >= 11 && a <= 20) <br>
+        return "D"; <br>
+        else if (a >= 21 && a <= 30) <br>
+        return "C"; <br>
+        else if (a >= 31 && a<= 40) <br>
+        return "B"; <br>
+        else if (a >= 41 && a<=50) <br>
+        return "A"; <br>
+        };
+        <hr>
+        const getValue = (a) => { <br>
+            if (a === "P" || a==="p" ) <br>
+            return "PrepBytes" <br>
+            else if ( a === 'E' || a==='e') <br>
+            return 'Expert Coder'; <br>
+            else if ( a === 'Z' || a==='z') <br>
+            return 'Zenith'; <br>
+            else if ( a === 'D' || a==='d') <br>
+            return 'Data Structure'; <br>
+            }; 
+            <hr>
+            const Max_out_of_three = (A,B,C) => { <br>
+                if (A > B && A > C) <br>
+                return A; <br>
+                else if ( B > A && B > C) <br>
+                return B; <br>
+                else if (C > A && C > B) <br>
+                return C; <br>
+                else if  (A === B) <br>
+                {<br>
+                if (B === C) <br>
+                return -1 <br>
+                } <br>
+                };
+                <hr>
+                const findSndSmallest = (x,y,z) => { <br>
+                    if (x < y  && x < z){ <br>
+                    if (y< z){ <br>
+                    return y; <br>
+                    } <br>
+                    } <br>
+                    else if (y < x &&  y < z) <br>
+                    { <br> 
+                    if (x < z){ <br>
+                    return x; <br>
+                    } <br>
+                    } <br>
+                    else if (z < x  && z < y) <br>
+                    { <br>
+                    if (x < y) <br>
+                    { <br>
+                    return x <br>
+                    } <br>
+                    } <br>
+                    };
+                    <hr>
+                    const Triangle_Check = (A,B,C) => { <br>
+                        if ((A < 90 && B < 90 && C < 90) && (A+B+C === 180)) <br>
+                        return 'acute' <br>
+                        else <br>
+                        return 'obtuse' <br>
+                        };
+                        
+</body>
+</html>
